@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVEZ Spatial Network Operations</title>
+    <meta name="description" content="EVEZ Spatial Network Operations Gameboard — a truthful operations surface showing what is live, what is local-only, and what still needs to be built." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow">EVEZ Spatial Network Operations</p>
+        <h1>Canonical truth first. Decorative bullshit last.</h1>
+        <p class="lede">A playable-feeling operations website that shows sectors, provenance, runtime bridge gaps, and what is actually real versus simulated.</p>
+        <div class="cta-row">
+          <a class="btn btn--primary" href="#gameboard">Enter gameboard</a>
+          <a class="btn" href="#truth">See what is real</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="truth" class="section grid-two">
+        <div class="panel">
+          <p class="panel__label">Memory authority</p>
+          <h2>Local fallback is honest. Remote authority is still missing.</h2>
+          <p>The current website surface is a truthful shell: it can explain canonical state, provenance, bridge backlog, and next work, but it does not fake a live remote runtime.</p>
+          <div class="badge-row">
+            <span class="badge badge--sky">local only</span>
+            <span class="badge badge--red">missing</span>
+            <span class="badge badge--amber">stale</span>
+            <span class="badge badge--neutral">simulated</span>
+            <span class="badge badge--green">externally verified</span>
+          </div>
+        </div>
+        <div class="panel">
+          <p class="panel__label">Runtime bridge backlog</p>
+          <ul class="stack">
+            <li><strong>Authoritative state service</strong><span class="badge badge--red">missing</span></li>
+            <li><strong>Tool-result continuity bus</strong><span class="badge badge--red">missing</span></li>
+            <li><strong>Connector truth layer</strong><span class="badge badge--sky">local only</span></li>
+            <li><strong>Deployable control API</strong><span class="badge badge--red">missing</span></li>
+            <li><strong>Authenticity kill-list</strong><span class="badge badge--amber">active</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="gameboard" class="section">
+        <div class="section__head">
+          <p class="eyebrow">Gameboard sectors</p>
+          <h2>Spatial operations surface</h2>
+        </div>
+        <div class="sector-grid" id="sector-grid"></div>
+      </section>
+
+      <section class="section grid-three">
+        <div class="panel">
+          <p class="panel__label">Protected context ledger</p>
+          <ul class="stack small" id="context-ledger"></ul>
+        </div>
+        <div class="panel">
+          <p class="panel__label">Event ledger</p>
+          <ul class="stack small" id="event-ledger"></ul>
+        </div>
+        <div class="panel">
+          <p class="panel__label">Surface registry</p>
+          <ul class="stack small" id="surface-registry"></ul>
+        </div>
+      </section>
+
+      <section class="section grid-two">
+        <div class="panel">
+          <p class="panel__label">Command authenticity</p>
+          <ul class="stack small" id="commands"></ul>
+        </div>
+        <div class="panel">
+          <p class="panel__label">Next actions</p>
+          <ol class="stack small">
+            <li>Bind a real remote authority.</li>
+            <li>Add timestamps to all event-ledger entries.</li>
+            <li>Wire keep / merge / remove controls into the surface registry.</li>
+            <li>Prune stale local-only surfaces automatically.</li>
+            <li>Feed verified repo and deploy data back into this surface.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>This surface is intentionally honest: if a function is unwired, it should be blocked or labeled instead of pretending.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
