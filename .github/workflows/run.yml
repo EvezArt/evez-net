@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout evez-agentnet
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: EvezArt/evez-agentnet
           token: ${{ secrets.GITHUB_TOKEN }}
